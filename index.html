@@ -1,11 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font-wasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .eb-garamond {
+
+
+            font-family: "EB Garamond", serif;
+            font-optical-sizing: auto;
+
+
+        }
+
+        .poppins {
+            .poppins-thin {
+                font-family: "Poppins", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+
+            .poppins-extralight {
+                font-family: "Poppins", sans-serif;
+                font-weight: 200;
+                font-style: normal;
+            }
+
+            .poppins-light {
+                font-family: "Poppins", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+            }
+
+            .poppins-regular {
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .poppins-medium {
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            .poppins-semibold {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+            }
+
+            .poppins-bold {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+
+            .poppins-extrabold {
+                font-family: "Poppins", sans-serif;
+                font-weight: 800;
+                font-style: normal;
+            }
+
+            .poppins-black {
+                font-family: "Poppins", sans-serif;
+                font-weight: 900;
+                font-style: normal;
+            }
+
+            .poppins-thin-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 100;
+                font-style: italic;
+            }
+
+            .poppins-extralight-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 200;
+                font-style: italic;
+            }
+
+            .poppins-light-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 300;
+                font-style: italic;
+            }
+
+            .poppins-regular-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            .poppins-medium-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-style: italic;
+            }
+
+            .poppins-semibold-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-style: italic;
+            }
+
+            .poppins-bold-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-style: italic;
+            }
+
+            .poppins-extrabold-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 800;
+                font-style: italic;
+            }
+
+            .poppins-black-italic {
+                font-family: "Poppins", sans-serif;
+                font-weight: 900;
+                font-style: italic;
+            }
+
+        }
+
+        .text-col {
+            background: #B68C5A;
+            color: white;
+        }
+    </style>
 </head>
-<body>
+
+<body class="poppins">
+    <header class="container mx-auto  py-4">
+        <!-- navber -->
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>Home </a></li>
+                        <li><a>Sarvices <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>cases <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
+
+                        <li><a>contact Us <i class="fa-solid fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl"><img src="./images/logo2.png"></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home </a></li>
+                    <li><a>Sarvices <i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a>cases <i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
+
+                    <li><a>contact Us <i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn  text-col ">Free Consultation</a>
+            </div>
+        </div>
+        <!-- banner -->
+        <section class=" eb-garamond">
+            <!-- hero -->
+            <div class="hero p-20 " style="background-image: url(./images/banner.png);">
+                <!-- <div class="hero-overlay"></div> -->
+                <div class="hero-content text-neutral-content text-center">
+                    <div class=" lg:w-150">
+                        <h1 class="mb-5 text-6xl ">We Provide Effective Legal Solutions</h1>
+                        <p class="mb-5">
+                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        </p>
+                        <input type="text" placeholder="search your servicss"
+                            class="bg-white p-2 text-black border-none rounded-lg">
+                        <button class="btn text-col  border-none m-2">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="container mx-auto py-10">
+        <div class="w-140 mx-auto text-center">
+            <h2 class="eb-garamond text-3xl font-bold ">The Legal Practice Area</h2>
+            <p class="py-2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi laudantium qui reiciendis
+                autem maiores nesciunt,aceat culpa ipsa aliquid magnam autem tempore nesciunt?</p>
+        </div>
+        <section class="my-8 grid grid-cols lg:grid-cols-3 md:grid-cols-2 gap-3">
+            <div class="card bg-base-100 shadow-sm p-3">
+                <figure>
+                    <img src="./images/business.png" />
+                </figure>
+                <div class="card-body  text-center">
+                    <h2 class="eb-garamond text-3xl  font-bold">Business Low</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <div class=""><img src="./images/Frame.png" class="mx-auto"></div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-sm p-3">
+                <figure>
+                    <img src="./images/criminal.png" />
+                </figure>
+                <div class="card-body  text-center">
+                    <h2 class="eb-garamond text-3xl  font-bold">Criminal Low</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <div class=""><img src="./images/Frame.png" class="mx-auto"></div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-sm p-3">
+                <figure>
+                    <img src="./images/child.png" />
+                </figure>
+                <div class="card-body  text-center">
+                    <h2 class="eb-garamond text-3xl  font-bold">Child Support</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <div class=""><img src="./images/Frame.png" class="mx-auto"></div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-sm p-3">
+                <figure>
+                    <img src="./images/education.png" />
+                </figure>
+                <div class="card-body  text-center">
+                    <h2 class="eb-garamond text-3xl  font-bold">Education Low</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <div class=""><img src="./images/Frame.png" class="mx-auto"></div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-sm p-3">
+                <figure>
+                    <img src="./images/divorce.png" />
+                </figure>
+                <div class="card-body  text-center">
+                    <h2 class="eb-garamond text-3xl  font-bold">Education Low</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <div class=""><img src="./images/Frame.png" class="mx-auto"></div>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-sm p-3">
+                <figure>
+                    <img src="./images/tax.png" />
+                </figure>
+                <div class="card-body  text-center">
+                    <h2 class="eb-garamond text-3xl  font-bold">Business Low</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <div class=""><img src="./images/Frame.png" class="mx-auto"></div>
+                </div>
+            </div>
+
+        </section>
+        <section class="my-20">
+            <div class="w-140 mx-auto text-center">
+                <h2 class="eb-garamond text-3xl font-bold ">What Our Client Say</h2>
+                <p class="py-2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi laudantium qui
+                    reiciendis
+                    autem maiores nesciunt,aceat culpa ipsa aliquid magnam autem tempore nesciunt?</p>
+            </div>
+
+        </section>
+        <div class="carousel w-full ">
+            <div id="slide1" class="carousel-item relative w-full ">
+                <div class="relative">
+                    <img src="./images/slider-1.jpg " class="w-full " />
+                    <img src="./images/Rectangle 7.png" class="absolute top-4 w-full h-full">
+
+
+                </div>
+
+
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="relative">
+                    <img src="./images/slider-2.jpg " class="w-full " />
+                    <img src="./images/Rectangle 7.png" class="absolute top-4 w-full h-full">
+
+
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="relative">
+                    <img src="./images/slider-3.jpg " class="w-full " />
+                    <img src="./images/Rectangle 7.png" class="absolute top-4 w-full h-full">
+
+
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- frequent -->
+        <section class="my-20">
+ <div class="w-140 mx-auto text-center">
+                <h2 class="eb-garamond text-3xl font-bold ">Frequently asked Any  Questions</h2>
+                <p class="py-2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi laudantium qui
+                    reiciendis
+                    autem maiores nesciunt,aceat culpa ipsa aliquid magnam autem tempore nesciunt?</p>
+            </div>
+            <!-- frequently -->
+             <div class="grid grid-cols lg:grid-cols-2 gap-10 text-2xl ">
+                <div class="lg:my-30">
+<div class="collapse collapse-arrow bg-base-100 border border-base-300 lg:gap-10">
+  <input type="radio" name="my-accordion-2" checked="checked" />
+  <div class="collapse-title font-bold">How do I create an account?</div>
+  <div class="collapse-content text-lg">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+</div>
+<div class="collapse collapse-arrow bg-base-100 border border-base-300 lg:gap-10">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-bold">I forgot my password. What should I do?</div>
+  <div class="collapse-content text-lg">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+</div>
+<div class="collapse collapse-arrow bg-base-100 border border-base-300 lg:gap-10">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-bold">How do I update my profile information?</div>
+  <div class="collapse-content text-lg">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+<div class="collapse collapse-arrow bg-base-100 border border-base-300 lg:gap-10">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-bold">How do I update my profile information?</div>
+  <div class="collapse-content text-lg">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+                </div>
+                <div class="">
+<img src="./images/faq.png" class="w-full h-full">
+                </div>
+             </div>
+        </section>
+        <section class="my-20">
+             <div class="w-140 mx-auto text-center">
+                <h2 class="eb-garamond text-3xl font-bold ">Frequently asked Any  Questions</h2>
+                <p class="py-2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi laudantium qui
+                    reiciendis
+                    autem maiores nesciunt,aceat culpa ipsa aliquid magnam autem tempore nesciunt?</p>
+            </div>
+            <div class="flex-1 grid lg:grid-cols-2 md:grid-cols-1 gap-5">
+                <div class="grid lg:grid-cols-2 ">
+<div class="p-5 text-center shadow-sm">
+<img src="./images/location.png" class="mx-auto">
+<h3 class="eb-garamond font-bold text-2xl">Address</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, amet.</p>
+</div>
+<div class="p-5 text-center shadow-sm">
+<img src="./images/call.png" class="mx-auto">
+<h3 class="eb-garamond font-bold text-2xl">Call</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, amet.</p>
+</div>
+<div class="p-5 text-center shadow-sm">
+<img src="./images/email.png" class="mx-auto">
+<h3 class="eb-garamond font-bold text-2xl">Email</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, amet.</p>
+</div>
+<div class="p-5 text-center  shadow-sm">
+<img src="./images/criminal.png" class="mx-auto">
+<h3 class="eb-garamond font-bold text-2xl">Address</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, amet.</p>
+</div>
+                </div>
+                <div class="flex-1 p-5 ">
+<form class="fieldset bg-base-200 border-base-300 rounded-box border p-10 h-full">
+     <label class="fieldset">
+    <span class="label">Name</span>
+    <input type="text" class="input validator w-full" placeholder="Name" required />
+    <span class="validator-hint hidden">Required</span>
+  </label>
+  <fieldset class="fieldset">
+    <label class="label">Email</label>
+    <input type="email" class="input validator w-full" placeholder="Email" required />
+    <p class="validator-hint hidden">Required</p>
+  </fieldset>
+
+  <label class="fieldset ">
+    <span class="label ">Password</span>
+    <input type="password" class="input validator w-full" placeholder="Password" required />
+    <span class="validator-hint hidden">Required</span>
+  </label>
+ 
+
+  <button class="btn eb-garamond  text-col mt-4" type="submit">Login</button>
+  <button class="btn btn-ghost mt-1" type="reset">Reset</button>
+</form>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="footer sm:footer-horizontal bg-black text-white p-10 justify-between">
     
+  <nav>
+    <img src="./images/logo.png">
+    <h6 class="footer-title">Services</h6>
+    <a class="link link-hover">Branding</a>
+    <a class="link link-hover">Design</a>
+    <a class="link link-hover">Marketing</a>
+    <a class="link link-hover">Advertisement</a>
+  </nav>
+  <nav>
+    <h4 class="eb-garamond font-bold text-2xl">Lorem, ipsum.</h4>
+    <h6 class="footer-title">Company</h6>
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h4 class="eb-garamond font-bold text-2xl">Loremipsum.</h4>
+    <h6 class="footer-title">Legal</h6>
+    <a class="link link-hover">Terms of use</a>
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Cookie policy</a>
+  </nav>
+  <form>
+    <h4 class="eb-garamond font-bold text-2xl">Lorem ipsum</h4>
+    <h6 class="footer-title">Newsletter</h6>
+    <fieldset class="w-80">
+      <label>Enter your email address</label>
+      <div class="join">
+        <input
+          type="text"
+          placeholder="username@site.com"
+          class="input input-bordered join-item" />
+        <button class="btn text-col join-item">Subscribe</button>
+      </div>
+    </fieldset>
+  </form>
+</footer>
 </body>
+
 </html>
